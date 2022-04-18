@@ -10,6 +10,7 @@ const {
   wrapError,
 } = require('./utils/middleware/errorHandlers');
 const notFoundHandler = require('./utils/middleware/notFoundHandler');
+const filesApi = require('./routes/files.routes');
 
 const app = express();
 
@@ -17,6 +18,8 @@ app.use(express.json());
 app.use(helmet());
 app.use(cors());
 app.use(morgan('dev'));
+
+filesApi(app);
 
 app.use(notFoundHandler);
 
