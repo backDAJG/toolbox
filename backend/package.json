@@ -4,8 +4,8 @@
   "description": "backend toolbox",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=app:* && NODE_ENV=development && nodemon index",
-    "start": "NODE_ENV=production && node index",
+    "dev": "DEBUG=app:* && NODE_ENV=development && nodemon index.js",
+    "start": "NODE_ENV=production && node index.js",
     "test": "mocha --exit",
     "cover": "nyc npm run test",
     "report": "nyc report --reporter=html && start coverage/index.html"

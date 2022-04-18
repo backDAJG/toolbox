@@ -10,7 +10,7 @@ const filesApi = (app) => {
   router.get('/', async (req, res, next) => {
     try {
       const files = await filesService.getFiles();
-      res.status(200).json({ files: files.data.files });
+      res.status(200).json({ files: files });
     } catch (error) {
       next(error);
     }
