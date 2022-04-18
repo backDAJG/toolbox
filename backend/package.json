@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:backDAJG/toolbox.git/backend"
+    "url": "git@github.com:backDAJG/toolbox.git"
   },
   "author": "Alejandro Jerez",
   "license": "ISC",
