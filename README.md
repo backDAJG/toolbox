@@ -1,6 +1,6 @@
 # Toolbox - prueba tecnica
 
-Backend con NodeJS@16.14.1.
+Backend con NodeJS@14.19.1.
 
 ## Instalacion de paquetes para el backend
 
