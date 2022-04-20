@@ -1,11 +1,6 @@
 const boom = require('@hapi/boom');
-const { dev } = require('../../config');
 
-const withErrorStack = (err, stack) => {
-  if (dev) {
-    return { ...err, stack };
-  }
-
+const withErrorStack = (err, _stack) => {
   return err;
 };
 
