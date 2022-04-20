@@ -1,3 +1,12 @@
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import Page from './Page';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { store } from './store';
 
-render(<h1>Hola Mundo</h1>, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(
+  <Provider store={store}>
+    <Page />
+  </Provider>
+);
